@@ -1,81 +1,12 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-	<script>
-		var nome_hotel = "Hotel Transilvania"
-
-		function inicio() {
-
-			var nomeUsuario = prompt("Qual seu nome?")
-			var senha = prompt("qual sua senha?")
-
-			if(senha === "2678"){
-
-					alert("Bem vindo ao Hotel " + nome_hotel + " " + nomeUsuario +". É um imenso prazer ter você por aqui!")
-			}else if(senha != "2678" ) {
-
-				alert("acesso negado.")
-				sair();
-			};
-			
-			var escolha = parseInt(prompt('Selecione uma opção 1.) Reserva de Quartos 2.) Cadastro de Hóspedes 3.) Abastecimento de Carros 4.) Sair'));
-
-			if (escolha === 1) {
-				reserva_quartos();
-			} else if (escolha === 2) {
-				cadastro_hospedes();
-			} else if (escolha === 3) {
-				abastecer_carros();
-			} else if (escolha === 4) {
-				sair();
-			} else {
-				erro();
-			}
-		}		
-
-		function reserva_quartos() {
-			alert(nome_hotel + ' - RESERVA DE QUARTOS');
-			inicio();
-		}
-
-		function cadastro_hospedes() {
-			alert(nome_hotel + ' - CADASTRO DE HÓSPEDES');
-			inicio();
-		}
-
-		function abastecer_carros() {
-			alert(nome_hotel + ' - ABASTECER');
-			inicio();
-		}
-
-		function erro() {
-			alert('Por favor, informe um número entre 1 e 4');
-			inicio();
-		}
-
-		
-		function sair() {
-			var confirma = confirm('Você deseja sair?');
-			if (confirma) {
-					alert("Muito obrigado e até logo, "+ nomeUsuario);
-
-					
-					window.close();
-			} else {
-				inicio();
-			}
-			
-		}
-
-		
-		
-		inicio();
-	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="hotel.js"></script>
 </head>
-
 <body>
-
+	
 </body>
-
 </html>
